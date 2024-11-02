@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+header {
+    /*background-color: #ecebeb;*/
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.nav__burger {
+    flex-direction: column;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav__burger span {
+    display: flex;
+    background: #000;
+    height: 2px;
+    width: 25px;
+    margin: 5px;
+}
+
+.nav__logo {
+    font-size: 24px;
+}
+
+.categories__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.categories__name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    width: 250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sort select {
+    appearance: none;
+    border: none;
+    background: none;
+    font-size: 13px;
+    width: 100%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.sort:after {
+    content: "▾";
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+}
+
+.sort__filter {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.products__list {
+    margin: 50px 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.products__item {
+    width: 500px;
+    display: flex;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    border-radius: 15px;
+}
+
+.products__item-image {
+    width: 220px;
+    height: 320px;
+}
+
+.products__item-info {
+}
+
+.products__item-description {
+    padding: 20px;
+}
+
+.products__item-description h1 {
+    color: #066119;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.products__item-description p {
+    font-size: 13px;
+}
+
+.products__item-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+
+.products__item-price h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.products__item-price button {
+    appearance: none;
+    background: none;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
