@@ -11,10 +11,6 @@ hr {
     opacity: 0.4;
 }
 
-header {
-    /*background-color: #ecebeb;*/
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -39,6 +35,10 @@ header {
 
 .nav__logo {
     font-size: 24px;
+}
+
+.nav__cart {
+    cursor: pointer;
 }
 
 .categories__sort {
@@ -109,6 +109,9 @@ header {
 }
 
 .products__item-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .products__item-description {
@@ -116,7 +119,7 @@ header {
 }
 
 .products__item-description h1 {
-    color: #066119;
+    color: #052b0c;
     font-weight: 600;
     padding-bottom: 10px;
 }
@@ -145,3 +148,40 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
+footer {
+    background: #052b0c;
+    height: 150px;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px;
+}
+
+.footer__about {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+.footer__about h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer__icons svg {
+    background: #fff;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
